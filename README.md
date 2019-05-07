@@ -1,4 +1,4 @@
-# mobile-wifi-battery-level
+# mwbl
 **MWBL - Mobile Wifi Battery Level**
 Get battery level of TP-Link 4g mobile wifi. Tested to work with TP-Link M7350.
 
@@ -6,7 +6,7 @@ Script logins to TP-Link management website and scrapes battery level of the dev
 
 Dependencies:
 - Python
-- Selenium
+- Selenium and ChromeDriver
 - BeautifulSoup
 
 Usage:
