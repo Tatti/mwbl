@@ -14,5 +14,5 @@ Usage:
 python mwbl.py
 ```
 
-Examples:
-I have set up cronjob that prints output of this script to file that polybar reads.
+Examples:\
+I have set up cronjob every five minutes that prints output of this script to file that polybar reads.
