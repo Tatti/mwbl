@@ -21,12 +21,13 @@ assert "No results found." not in driver.page_source
 time.sleep(3)
 html = driver.execute_script("return document.getElementsByTagName('html')[0].innerHTML")
 soup = BeautifulSoup(html, 'html.parser')
-i = 0
+
 for ultag in soup.find_all('ul', {'id': 'top_icon_layout'}):
     for litag in ultag.find_all('li'):
-        if i == 6:
-            att = litag.attrs
-            print(att.get("title"))
-        i += 1
+        att = litag.a.i
+        if att is not None:
+            if att.get('id') == 'topElectricity':
+                bat = litag.attrs
+                print(bat.get("title"))
 
 driver.close()
