@@ -30,4 +30,4 @@ for ultag in soup.find_all('ul', {'id': 'top_icon_layout'}):
                 bat = litag.attrs
                 print(bat.get("title"))
 
-driver.close()
+driver.quit()
